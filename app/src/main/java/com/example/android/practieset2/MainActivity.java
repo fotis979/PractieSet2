@@ -27,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void no(View view) {
         healthLevel = healthLevel - 1;
-        message = "You answered no, current health level is " + healthLevel;
+        message = "You answered no, current health level is + " + healthLevel;
         display(message);
     }
 
     public void sometimes(View view) {
-        healthLevel = healthLevel + 0;
+        //healthLevel = healthLevel + 0;
         message = "You answered sometimes, current health level is " + healthLevel;
         display(message);
     }
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void display(int text) {
         TextView t = (TextView) findViewById(R.id.displayMessage);
-        t.setText(text + "");
+        t.setText(text + " ");
     }
 
 
